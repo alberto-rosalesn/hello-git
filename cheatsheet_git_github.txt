@@ -1,0 +1,92 @@
+git config 
+
+git init
+
+git status
+
+git add <filename> or git add . (for everything)
+
+git commit -m "Mi primer commit"
+
+git log
+
+git checkout <filename>    ---- regresa el estado a al ultimo snapshot
+
+git reset --- regresa a la version anterior
+
+git log --graph
+
+git log --graph --pretty=oneline
+
+git ignore     .gitignore -> file where you can add files or folder to avoid upload to the repo
+
+git diff
+
+git checkout <hash commit> -> Para desplazarse en la rama (entre commits)
+
+git reset hard <hash commit> -> eliminar los cambios hechos despues de un commit
+
+git reflog -> visualizar todos los cambios
+
+git tag <nombretag> -> taggea en el commit que estas actualmente
+
+git checkout tags/<nombretag> te movera a ese commit
+
+git branch login
+
+git switch login
+
+git merge
+
+* Cuando hay conflicto con merge. Check changes, add and commit *
+
+git stash *Temp saved in local but wont generate commit and also wont affect the tree*
+
+git stash list
+
+git stash pop *Return changes saved with git stash*
+
+git stash drop *Delete changes saved with git stash*
+
+git checkout <filename> undo changes
+
+git branch -d login
+
+****** GitHub ********
+
+Configuracion de SSH
+
+https://docs.github.com/es/authentication
+
+Nuevo repo
+
+…or create a new repository on the command line
+echo "# hello-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/alberto-rosalesn/hello-git.git
+git push -u origin main
+
+Local a un repo nuevo
+git remote add origin https://github.com/alberto-rosalesn/hello-git.git
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/alberto-rosalesn/hello-git.git
+git branch -M main
+git push -u origin main
+
+Subir cambios del repo local al github
+git push -u origin main
+
+subir cambios al github
+git pull & git add . & git commit - m "" & git push
+
+git fetch you can see change state ver el estado de los cambios
+
+git config pull.rebase false  -> Merge (Mejor opcion)
+
+git pull origin main 
+
+git push-
